@@ -5,6 +5,7 @@
         SignIn = 0,
         SignUp = 1,
         Main = 2,
+        EditUser = 3
     }
 
     interface INavigationModel

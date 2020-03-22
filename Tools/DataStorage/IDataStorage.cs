@@ -11,6 +11,10 @@ namespace WPFProject_Lab4.Tools.DataStorage
 
         void AddUser(User user);
 
+        void EditUser(User newUser);
+
+        void RemoveUser(User user);
+
         List<User> UsersList { get; }
     }
 }

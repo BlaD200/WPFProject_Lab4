@@ -92,7 +92,7 @@ namespace WPFProject_Lab4.ViewModels.Authentication
             LoaderManager.Instance.ShowLoader();
             var result = await Task.Run(() =>
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(200);
                 User currentUser;
                 try
                 {
@@ -120,7 +120,10 @@ namespace WPFProject_Lab4.ViewModels.Authentication
             });
             LoaderManager.Instance.HideLoader();
             if (result)
+            {
+
                 NavigationManager.Instance.Navigate(ViewType.Main);
+            }
         }
     }
 }

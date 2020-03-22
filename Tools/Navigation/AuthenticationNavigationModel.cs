@@ -1,4 +1,5 @@
 ﻿using System;
+using WPFProject_Lab4.Views;
 using WPFProject_Lab4.Views.Authentication;
 using MainView = WPFProject_Lab4.Views.MainView;
 using SignUpView = WPFProject_Lab4.Views.Authentication.SignUpView;
@@ -24,6 +25,9 @@ namespace WPFProject_Lab4.Tools.Navigation
                     break;
                 case ViewType.Main:
                     AddView(ViewType.Main, new MainView());
+                    break;
+                case ViewType.EditUser:
+                    AddView(ViewType.EditUser, new EditUserView());
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(viewType), viewType, null);
